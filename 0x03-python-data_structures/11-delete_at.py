@@ -5,4 +5,4 @@ def delete_at(my_list=[], idx=0):
         return my_list
     else:
         new_list = my_list.replace([0], '')
-        return my_list
+        return new_list
