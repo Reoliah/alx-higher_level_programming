@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
-'''define an empty class'''
+"""Define a class Square."""
+
 
 class Square:
-    pass #pass ensures the class is skipped
+    """Represent a square."""
+    pass
