@@ -7,13 +7,16 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
+        Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
         """
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Defining private instance attribute for width."""
+        """Get/set the width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -26,7 +29,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Defining private instance attribute for height."""
+        """Get/set the height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -63,9 +66,10 @@ class Rectangle:
 
     def __repr__(self):
         """Return the string representation of the Rectangle."""
-        rect = "Rectangle(" + str(self.__width)+ ", " + str(self.__height) + ")"
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
         return (rect)
 
     def __del__(self):
         """Print a message for every deletion of a Rectangle."""
-        print("Bye bye rectangle")
+        print("Bye rectangle...")
