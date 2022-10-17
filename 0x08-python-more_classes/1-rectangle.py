@@ -1,17 +1,16 @@
 #!/usr/bin/python3
-"""
-Real definition of a Rectangle must include width and height
-"""
+"""Real definition of a Rectangle must include width and height"""
+
+
 class Rectangle:
     def __init__(self, width=0, height=0):
-        """ initializing properties of a rectangle """
+        """initializing properties of a rectangle"""
 
         self.width = width
         self.height = height
 
     @property
-    """ defining the private instance attributes """
-
+    """defining the private instance attributes"""
     def width(self):
         print("retrieving the width")
         
